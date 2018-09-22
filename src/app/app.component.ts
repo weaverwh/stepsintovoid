@@ -12,9 +12,13 @@ export class AppComponent {
     0: false,
     1: false
   };
+  activeStep: number = 0;
 
-  activateStep = function(stepNumber) {
+  activateStep = function(stepNumber, stepSpeed) {
     this.steps[stepNumber] = true;
+    setTimeout(function(){
+      this.activeStep = stepNumber + 1;
+    }.bind(this), stepSpeed);
   };
 
 }

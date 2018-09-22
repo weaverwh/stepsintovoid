@@ -1,5 +1,6 @@
-<div class="phase0">
-  <div class="target" (click)="activateStep(0)" [ngClass]="{'active': steps[0]}"></div>
+<div class="phase phase0" [ngClass]="{'active': activeStep === 0}">
+  <div class="target" (click)="activateStep(0, 2000)" [ngClass]="{'animate': steps[0]}"></div>
 </div>
-<div class="phase1">
+<div class="phase phase1" [ngClass]="{'active': activeStep === 1}">
+  <div class="target" (click)="activateStep(1, 2000)" [ngClass]="{'animate': steps[1]}"></div>
 </div>
