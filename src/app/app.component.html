@@ -4,3 +4,9 @@
 <div class="phase phase1" [ngClass]="{'active': activeStep === 1}">
   <div class="target" (click)="activateStep(1, 2000)" [ngClass]="{'animate': steps[1]}"></div>
 </div>
+<div class="phase phase2" [ngClass]="{'active': activeStep === 2}">
+  <div class="target" (click)="activateStep(2, 2000)" [ngClass]="{'animate': steps[2]}"></div>
+</div>
+<div class="phase phase3" [ngClass]="{'active': activeStep === 3}">
+  <div class="target" (click)="activateStep(3, 2000)" [ngClass]="{'animate': steps[3]}"></div>
+</div>

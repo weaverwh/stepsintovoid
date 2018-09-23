@@ -7,10 +7,13 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'stepsintovoid';
+
+  title: string = 'stepsintovoid';
   steps: any = {
     0: false,
-    1: false
+    1: false,
+    2: false,
+    3: false
   };
   activeStep: number = 0;
 
